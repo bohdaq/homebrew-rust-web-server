@@ -8,7 +8,7 @@ class Rws < Formula
   depends_on "rust" => :build
 
   def install
-    system "cargo", "install", *std_cargo_args
+    bin.install "rws"
   end
 
   test do
